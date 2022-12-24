@@ -1,0 +1,12 @@
+FILE=/usr/bin/ski32.exe
+if [ -f "$FILE" ]; then
+    wine /usr/bin/ski32.exe
+else
+    FILE2=./ski32.exe
+    if [ -f "$FILE2" ]; then
+        wine ./ski32.exe
+    else
+        notify-send "App error" "Failed to start skifree. File not found"
+        #Display error, DEPENDANCY WINE, libnotify-bin
+    fi
+fi
