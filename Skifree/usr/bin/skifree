@@ -1,10 +1,12 @@
-FILE=/usr/bin/ski32.exe
+#!/usr/bin/bash
+
+FILE=/usr/share/enderbyteprograms/exec/ski32.exe
 if [ -f "$FILE" ]; then
-    wine /usr/bin/ski32.exe
+    wine "$FILE"
 else
-    FILE2=./ski32.exe
+    FILE2=../share/enderbyteprograms/exec/ski32.exe
     if [ -f "$FILE2" ]; then
-        wine ./ski32.exe
+        wine "$FILE2"
     else
         notify-send "App error" "Failed to start skifree. File not found"
         #Display error, DEPENDANCY WINE, libnotify-bin

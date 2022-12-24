@@ -1,0 +1,6 @@
+#!/usr/bin/bash
+
+#This script sets file permissions to root just to be safe
+sudo chown root:root /usr/bin/skifree
+sudo chown -R root:root /usr/share/enderbyteprograms
+sudo chown root:root /usr/share/applications/skifree.desktop
