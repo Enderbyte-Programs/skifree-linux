@@ -5,4 +5,4 @@ Exec=bash /usr/bin/skifree
 Icon=/usr/share/enderbyteprograms/icons/skifree.xpm
 Terminal=false
 Type=Application
-Categories=Games;
+Categories=Game

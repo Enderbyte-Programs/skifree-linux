@@ -1,11 +1,11 @@
 Source: skifree
-Section: devel
 Priority: optional
 Maintainer: Enderbyte09
-Version: 1.0.4.1
+Version: 1.0.4.2
 Package: skifree
 Architecture: all
-Depends: wine, libnotify-bin
+Depends: wine
+Recommends: libnotify-bin
 Installed-Size: 727
 Description: Skifree Game
  This is a Linux/wine wrapper for the classic windows game skifree
